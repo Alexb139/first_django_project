@@ -1,10 +1,10 @@
 import json
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 # Create your views here.
 
 def index(request) :
-    return HttpResponse(json.dumps(data))
+    return JsonResponse(json.dumps(data))
 
 data = {
     "Name": "Alexandria Baynes",
